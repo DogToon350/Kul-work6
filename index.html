@@ -1,3 +1,212 @@
-<h1>นายกูล แสงสุรินทร์</h1>
-<h1>สาขาคอมพิวเตอร์โปรแกรมเมอร์</h1>
-<h1>ชั้น สคม.69/1 ตรง</h1>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แนะนำตัว | นายกูล แสงสุรินทร์</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      overflow: hidden;
+      font-family: "Leelawadee UI", Tahoma, sans-serif;
+      color: #f7f8ff;
+      background: linear-gradient(135deg, #10132e, #25235a 55%, #44317b);
+    }
+
+    .orb {
+      position: fixed;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      filter: blur(2px);
+      opacity: .35;
+      animation: float 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .orb-one {
+      top: -90px;
+      left: -60px;
+      background: #64d9ff;
+    }
+
+    .orb-two {
+      right: -80px;
+      bottom: -100px;
+      background: #ff78c8;
+      animation-delay: -3s;
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 560px);
+      padding: 42px 32px;
+      text-align: center;
+      border: 1px solid #ffffff30;
+      border-radius: 28px;
+      background: #ffffff12;
+      box-shadow: 0 24px 80px #08091f70;
+      backdrop-filter: blur(16px);
+      animation: appear .9s ease-out both;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      font-size: 48px;
+      background: linear-gradient(135deg, #64d9ff, #b27aff);
+      box-shadow: 0 0 32px #8f83ff80;
+      animation: bob 3s ease-in-out infinite;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #b8c5ff;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 7vw, 42px);
+      background: linear-gradient(90deg, #fff, #9be8ff, #e1b5ff);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .description {
+      margin: 12px 0 28px;
+      color: #d7d9f3;
+      line-height: 1.8;
+    }
+
+    .details {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      text-align: left;
+    }
+
+    .details div {
+      padding: 14px 16px;
+      border: 1px solid #ffffff1f;
+      border-radius: 14px;
+      background: #ffffff0c;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .details div:hover {
+      transform: translateY(-3px);
+      background: #ffffff18;
+    }
+
+    dt {
+      margin-bottom: 4px;
+      color: #aeb8ed;
+      font-size: 13px;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    button {
+      margin-top: 26px;
+      padding: 12px 24px;
+      border: 0;
+      border-radius: 999px;
+      color: #171633;
+      background: linear-gradient(90deg, #8de7ff, #d6adff);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 8px 24px #a4caff55;
+    }
+
+    #message {
+      min-height: 28px;
+      margin: 14px 0 0;
+      color: #c9f3ff;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(24px) scale(.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(24px, -20px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+
+  <main>
+    <div class="avatar" aria-hidden="true">👋</div>
+    <p class="eyebrow">WELCOME TO MY PAGE</p>
+    <h1>นายกูล แสงสุรินทร์</h1>
+    <p class="description">สวัสดีครับ ยินดีต้อนรับสู่หน้าแนะนำตัวของผม</p>
+
+    <dl class="details">
+      <div>
+        <dt>กำลังศึกษา</dt>
+        <dd>วิทยาลัยอาชีวศึกษาขอนแก่น</dd>
+      </div>
+      <div>
+        <dt>ห้องเรียน</dt>
+        <dd>สคม.69/1 ตรง</dd>
+      </div>
+      <div>
+        <dt>รหัสนักศึกษา</dt>
+        <dd>69319030001</dd>
+      </div>
+    </dl>
+
+    <button id="greetButton" type="button">กดเพื่อทักทาย ✨</button>
+    <p id="message" aria-live="polite"></p>
+  </main>
+
+  <script>
+    const button = document.querySelector("#greetButton");
+    const message = document.querySelector("#message");
+
+    button.addEventListener("click", () => {
+      message.textContent = "ขอบคุณที่แวะมาทำความรู้จักครับ 😊";
+      button.textContent = "ทักทายแล้ว 💙";
+    });
+  </script>
+</body>
+</html>
